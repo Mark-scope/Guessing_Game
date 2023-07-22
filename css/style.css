@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+/* Home Quiz */
+
+.quizpage-mainbg {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/qbg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.mainquizpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.mainquizpage h1, .mainquizpage h2, .mainquizpage h5, .mainquizpage h4 {
+    margin: 4rem;
+}
+
+.mainquizpage h4 {
+    font-weight: 200;
+    font-size: 43.514px;
+    position: relative;
+    bottom: 2rem;
+
+}
+
+.mainquizpage h1 {
+    font-size: 98.072px;
+    font-weight: 500;
+    position: relative;
+    bottom: 3rem;
+
+}
+
+.mainquizpage h5 {
+    font-size: 30.258px;
+    font-weight: 200;
+    position: relative;
+    bottom: 7.3rem;
+}
+
+.mainquizpage h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 30.258px;
+
+}
+
+.mainquizpage h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.startQuizButton {
+    width: 300px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 46.5px;
+    border: 6px solid #FFF;
+    background: linear-gradient(180deg, #E2DD66 0%, #2D3AAF 100%);
+    position: relative;
+    bottom: 3.4rem;
+
+    
+}
+
+.topbar-icon {
+    width: 99px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 49rem;
+    left: 2rem;
+    background-color: white;
+    border-radius: 46px;
+}
+
+.topbar-icon img {
+    margin: 0;
+    padding: 0;
+
+}
+
+@media (max-width: 768px) {
+    .mainquizpage h4 {
+        font-size: 32px;
+        bottom: 1.5rem;
+    }
+
+    .mainquizpage h1 {
+        font-size: 60px;
+        bottom: 2rem;
+    }
+
+    .mainquizpage h5 {
+        font-size: 20px;
+        bottom: 6.5rem;
+    }
+
+    .mainquizpage h2 {
+        font-size: 20px;
+    }
+
+    .startQuizButton {
+        width: 200px;
+        height: 70px;
+        bottom: 6rem;
+    }
+
+    .topbar-icon {
+        transform: scale(0.4);
+        bottom: 36rem;
+        left: 1rem;
+    }
+}
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles specifically for iPhone 8 */
+    .mainquizpage h4 {
+        font-size: 26px;
+    }
+
+    .mainquizpage h1 {
+        font-size: 50px;
+        bottom: 1.5rem;
+    }
+
+    .mainquizpage h5 {
+        font-size: 18px;
+        bottom: 4rem;
+    }
+
+    .mainquizpage h2 {
+        font-size: 18px;
+    }
+
+    .startQuizButton {
+        width: 180px;
+        height: 60px;
+        bottom: 1.5rem;
+    }
+
+    .topbar-icon {
+        transform: scale(0.4);
+        top: 5rem;
+        left: 1rem;
+    }
+}
+
+/* ----------------   Quiz    ----------- */
+
+.quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+  }
+
+.quizstart-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/qbg.png);
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.topbarkeep h5 {
+    font-size: 9.7px;
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 155.333px;
+    height: 34px;
+    padding: 9px;
+    padding-left: 30px;
+    margin-top: 1rem;
+}
+
+.topbar-icon2 {
+    width: 36px;
+    height: 35.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 46px;
+    margin-top: 1rem;
+
+}
+
+.topbarkeep {
+    color: white;
+    position: relative;
+    bottom: 16rem;
+    right: 31rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+/* Question styling*/
+
+.question-container {
+    position: relative;
+    bottom: 3rem;
+    width: 1070px;
+    height: 321px;
+    border-radius: 79px;
+    border: 6px solid #FFF;
+    color: white;
+
+}
+
+.question1 {
+    width: 250px;
+    height: 70px;
+    margin-bottom: 1rem; /* Add a small margin below the question title */
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+    font-size: 42.855px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust the question container for smaller screens */
+    .question-container {
+        max-width: 400px;
+        padding: 1rem;
+        border: 2px solid white;
+
+    }
+
+    .question1 {
+        font-size: 28px;
+    }
+
+    .topbarkeep {
+        bottom: 12rem;
+        right: 2rem;
+        gap: 1rem;
+    }
+}
+
+@media only screen 
+  and (device-width: 375px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .question-container {
+        max-width: 90vw;
+        padding: 1.5rem;
+
+    }
+
+    .question1 {
+        font-size: 24px;
+    }
+
+    .topbarkeep {
+        top: 3rem;
+    }
+}

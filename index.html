@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <title>Python Syntax Quiz</title>
+</head>
+<body>
+
+    <!-- Mainpage -->
+<div class="quizpage-mainbg">
+    <div class="mainquizpage">
+        <h4>Quiz:</h4>
+        <h1>Python Syntax</h1>
+        <h5>Check your knowledge on Python's syntax!</h5>
+
+        <div class="startQuizButton" onclick="switchPage()">
+            <h2><a href="#startQuestion">Start</a></h2>
+        </div>
+    </div>
+    <div class="topbar-icon">
+        <img src="/img/python-icon_1.png" alt="python-icon"/>
+    </div>
+</div>
+
+<!-- QuizStart-bg -->
+<div class="quizstart-bg" style="display: none;">
+    <div class="quiz">
+        <div class="question-container">
+            <div class="question-content">
+                <h2 class="question1" id="startQuestion">Question 1</h2>
+            </div>
+            <div class="topbarkeep">
+                <div class="topbar-icon2">
+                    <img src="/img/python-icon_1.png" alt="python-icon" width="25" height="28"/>
+                </div>
+                <h5>Python Syntax Quiz</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const switchPage = () => {
+        const mainPage = document.querySelector('.quizpage-mainbg');
+        const quizPage = document.querySelector('.quizstart-bg');
+
+        if (mainPage.style.display === 'none') {
+            mainPage.style.display = 'block';
+            quizPage.style.display = 'none';
+        } else {
+            mainPage.style.display = 'none';
+            quizPage.style.display = 'block';
+        }
+    };
+</script>
+
+</body>
+</html>
